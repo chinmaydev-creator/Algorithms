@@ -1,0 +1,45 @@
+# Build results
+bin/
+obj/
+out/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.userprefs
+
+# Visual Studio Code
+.vscode/
+.history/
+
+# Rider
+.idea/
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+*.NuGet.Config
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# DotCover
+*.dotCover
+
+# Coverage
+*.coverage
+*.coveragexml
+coverage/
+
+# TFS
+$tf/
+
+# SQ
