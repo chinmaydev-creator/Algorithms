@@ -1,14 +1,17 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, to world of LinkedLists!");
 var linkedList = new MyLinkedList();
-linkedList.AddAtHead(456);
-linkedList.AddAtHead(245);
-linkedList.AddAtHead(0);
-linkedList.AddAtHead(76);
-linkedList.AddAtTail(34);
-linkedList.AddAtHead(22);
-linkedList.AddAtIndex(3, 56);
-linkedList.DeleteAtIndex(3);
+linkedList.AddAtHead(1);
+linkedList.AddAtTail(3);
+linkedList.AddAtIndex(1, 2);
+
+// linkedList.AddAtHead(245);
+// linkedList.AddAtHead(0);
+// linkedList.AddAtHead(76);
+// linkedList.AddAtTail(34);
+// linkedList.AddAtHead(22);
+// linkedList.AddAtIndex(3, 56);
+linkedList.DeleteAtIndex(1);
 
 int index = 0;
 Console.WriteLine("Value returned from linkedList: ");
@@ -154,7 +157,10 @@ public class MyLinkedList
                     currIndex++;
                 }
             }
-            currNode.next = currNode.next.next;
+            if (currNode.next != null)
+            {
+                currNode.next = currNode.next.next;
+            }
         }
 
     }
